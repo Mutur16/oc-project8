@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap');
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+
+.logo {
+    width: 210px;
+    height: 68px;
+}
+
+.navbar {
+    display: flex;
+    gap: 57px;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: #ff6060;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+}
