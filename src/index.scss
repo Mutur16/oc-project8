@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header, main {
+    margin: 20px;
+}
+
+@media (min-width: 1280px) {
+    header, main {
+        max-width: 1240px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

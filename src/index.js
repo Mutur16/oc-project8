@@ -7,7 +7,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Housing from './pages/Housing'
 import Error from './pages/Error'
-import './index.css'
+import './index.scss'
 
 const router = createBrowserRouter([
     {

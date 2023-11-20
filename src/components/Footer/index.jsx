@@ -1,15 +1,14 @@
-import './footer.css'
-import LogoBlack from '../../assets/logo-black.png'
+import './footer.scss'
+import LogoWhite from '../../assets/logo-white.png'
 
 function Footer() {
     return (
         <footer>
             <img
-                src={LogoBlack}
-                alt="Logo Kasa noir et blanc"
-                className="logo-black"
+                src={LogoWhite}
+                alt="Logo Kasa blanc"
             />
-            <p className="credits">© 2020 Kasa. All rights reserved</p>
+            <p>© 2020 Kasa. All rights reserved</p>
         </footer>
     )
 }

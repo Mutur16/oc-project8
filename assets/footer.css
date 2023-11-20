@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap");
+footer {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  padding-top: 66px;
+  padding-bottom: 58px;
+}
+footer img {
+  width: 122px;
+  height: 40px;
+}
+footer p {
+  width: 134px;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  footer {
+    padding-bottom: 29px;
+    gap: 28px;
+  }
+  footer p {
+    width: 100%;
+    font-size: 24px;
+  }
+}
