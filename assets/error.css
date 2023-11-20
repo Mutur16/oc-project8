@@ -23,7 +23,7 @@
   font-weight: 500;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .error {
     gap: 139px;
   }
@@ -36,8 +36,6 @@
   .error .home-link {
     font-size: 18px;
   }
-}
-@media (min-width: 1000px) {
   br {
     display: none;
   }

@@ -22,7 +22,7 @@ header nav .navbar-link {
   font-weight: 500;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   header {
     margin-top: 45px;
   }
