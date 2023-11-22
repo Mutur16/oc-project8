@@ -31,7 +31,7 @@
   white-space: pre;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1020px) {
   .banner {
     height: 223px;
   }

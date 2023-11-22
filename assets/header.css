@@ -14,15 +14,18 @@ header nav {
   gap: 26px;
   align-items: center;
 }
-header nav .navbar-link {
+header nav a {
   text-decoration: none;
   text-transform: uppercase;
   color: #FF6060;
   font-size: 12px;
   font-weight: 500;
 }
+header nav a.active {
+  text-decoration: underline;
+}
 
-@media (min-width: 992px) {
+@media (min-width: 1020px) {
   header {
     margin-top: 45px;
   }
@@ -33,7 +36,7 @@ header nav .navbar-link {
   header nav {
     gap: 57px;
   }
-  header nav .navbar-link {
+  header nav a {
     text-transform: none;
     font-size: 24px;
   }

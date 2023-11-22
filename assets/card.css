@@ -1,0 +1,40 @@
+.card {
+  position: relative;
+  width: 100%;
+  height: 255px;
+  border-radius: 10px;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  border-radius: 10px;
+}
+.card p {
+  position: absolute;
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: -3em;
+  margin-left: 0.8em;
+  z-index: 1;
+}
+
+@media (min-width: 1020px) {
+  .card {
+    height: 340px;
+  }
+}
