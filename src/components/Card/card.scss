@@ -41,6 +41,9 @@
 
 @media (min-width: 1020px) {
     .card {
+        width: auto;
+        max-width: 340px;
         height: 340px;
+        box-sizing: border-box;
     }
 }
