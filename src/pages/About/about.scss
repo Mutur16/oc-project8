@@ -1,0 +1,15 @@
+.collapse {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 19px 0;
+}
+
+@media (min-width: 1020px) {
+    .collapse {
+        width: 85%;
+        margin: auto;
+        padding: 38px 0;
+        gap: 30px;
+    }
+}

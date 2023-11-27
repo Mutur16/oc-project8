@@ -1,0 +1,65 @@
+@import '../../scss/variables.scss';
+
+.collapsibleHeader {
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $main-color;
+    border-radius: 5px;
+
+    .collapsibleLabel {
+        color: white;
+        font-size: 13px;
+    }
+
+    .collapsibleArrow {
+        width: 24px;
+        height: 24px;
+        transition: transform 0.3s ease-in-out;
+    }
+}
+
+.turnArrow {
+    transform: rotate(-180deg);
+}
+
+.collapsibleContent {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+
+    p {
+        padding: 10px;
+        font-size: 13px;
+        background-color: #f7f7f7;
+        border-radius: 5px;
+        color: $main-color;
+        margin: 0;
+    }
+}
+
+@media (min-width: 1020px) {
+    .collapsibleHeader {
+        padding: 10px 20px 10px 15px;
+
+        .collapsibleLabel {
+            font-size: 24px;
+        }
+
+        .collapsibleArrow {
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    .collapsibleContent {
+        
+        p {
+            padding: 10px 20px 10px 15px;
+            font-weight: 300;
+            font-size: 20px;
+        }
+    }
+}

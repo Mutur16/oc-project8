@@ -3,7 +3,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 20px;
+  padding: 20px 0;
 }
 header img {
   width: 145px;
@@ -27,7 +27,7 @@ header nav a.active {
 
 @media (min-width: 1020px) {
   header {
-    margin-top: 45px;
+    padding: 38px 0;
   }
   header img {
     width: 210px;
