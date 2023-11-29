@@ -4,7 +4,7 @@ function Banner(props) {
     return (
         <div className="banner">
             <img src={props.img} alt={props.alt} />
-            {props.text && <p className="bannerText">{props.text}</p>}
+            {props.text && <p className="banner-text">{props.text}</p>}
         </div>
     )
 }

@@ -6,9 +6,14 @@ import './container.scss'
 
 function CardContainer() {
     return (
-        <div className="cardContainer">
+        <div className="card-container">
             {housingData.map((data) => (
-                <Card key={data.id} title={data.title} cover={data.cover} />
+                <Card
+                    key={data.id}
+                    id={data.id}
+                    title={data.title}
+                    cover={data.cover}
+                />
             ))}
         </div>
     )

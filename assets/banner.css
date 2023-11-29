@@ -21,7 +21,7 @@
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 }
-.banner .bannerText {
+.banner .banner-text {
   position: absolute;
   margin-top: -3.5em;
   margin-left: 1em;
@@ -41,7 +41,7 @@
   .banner::after {
     border-radius: 25px;
   }
-  .banner .bannerText {
+  .banner .banner-text {
     margin-top: -3em;
     margin-left: 0;
     left: 50%;

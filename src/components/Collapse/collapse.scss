@@ -1,6 +1,6 @@
 @import '../../scss/variables.scss';
 
-.collapsibleHeader {
+.collapsible-header {
     cursor: pointer;
     padding: 10px;
     display: flex;
@@ -9,23 +9,23 @@
     background-color: $main-color;
     border-radius: 5px;
 
-    .collapsibleLabel {
+    .collapsible-label {
         color: white;
         font-size: 13px;
     }
 
-    .collapsibleArrow {
+    .collapsible-arrow {
         width: 24px;
         height: 24px;
         transition: transform 0.3s ease-in-out;
     }
 }
 
-.turnArrow {
+.turn-arrow {
     transform: rotate(-180deg);
 }
 
-.collapsibleContent {
+.collapsible-content {
     max-height: 0;
     overflow: hidden;
     transition: all 0.3s;
@@ -41,21 +41,20 @@
 }
 
 @media (min-width: 1020px) {
-    .collapsibleHeader {
+    .collapsible-header {
         padding: 10px 20px 10px 15px;
 
-        .collapsibleLabel {
+        .collapsible-label {
             font-size: 24px;
         }
 
-        .collapsibleArrow {
+        .collapsible-arrow {
             width: 32px;
             height: 32px;
         }
     }
 
-    .collapsibleContent {
-        
+    .collapsible-content {
         p {
             padding: 10px 20px 10px 15px;
             font-weight: 300;

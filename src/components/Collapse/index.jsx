@@ -16,17 +16,19 @@ function Collapse({ label, text }) {
     }
 
     return (
-        <div className="collapsible">
-            <div className="collapsibleHeader">
-                <span className="collapsibleLabel">{label}</span>
+        <div>
+            <div className="collapsible-header">
+                <span className="collapsible-label">{label}</span>
                 <img
                     src={arrow}
                     alt="icone de flèche"
-                    className={`collapsibleArrow ${isOpen ? 'turnArrow' : ''}`}
+                    className={`collapsible-arrow ${
+                        isOpen ? 'turn-arrow' : ''
+                    }`}
                     onClick={toggleCollapse}
                 />
             </div>
-            <div className="collapsibleContent" ref={contentRef}>
+            <div className="collapsible-content" ref={contentRef}>
                 <p>{text}</p>
             </div>
         </div>
