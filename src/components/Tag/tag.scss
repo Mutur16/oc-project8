@@ -1,0 +1,34 @@
+@import '../../scss/variables.scss';
+
+.tag-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .tag {
+        display: flex;
+        padding: 1px 5px;
+        min-width: 84px;
+        height: 18px;
+        border-radius: 5px;
+        background-color: $main-color;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        font-family: Montserrat;
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 1020px) {
+    .tag-container {
+        .tag {
+            min-width: 115px;
+            height: 25px;
+            border-radius: 10px;
+            color: white;
+            font-size: 14px;
+        }
+    }
+}
