@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #FF6060;
+  background-color: #ff6161;
   border-radius: 5px;
 }
 .collapsible-header .collapsible-label {
@@ -31,7 +31,7 @@
   font-size: 13px;
   background-color: #f7f7f7;
   border-radius: 5px;
-  color: #FF6060;
+  color: #ff6161;
   margin: 0;
 }
 
@@ -40,7 +40,7 @@
     padding: 10px 20px 10px 15px;
   }
   .collapsible-header .collapsible-label {
-    font-size: 24px;
+    font-size: 20px;
   }
   .collapsible-header .collapsible-arrow {
     width: 32px;
@@ -49,6 +49,6 @@
   .collapsible-content p {
     padding: 10px 20px 10px 15px;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 18px;
   }
 }

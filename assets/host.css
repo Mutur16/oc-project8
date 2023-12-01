@@ -1,0 +1,35 @@
+.host-details {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+  order: 2;
+}
+.host-details p {
+  display: flex;
+  justify-content: flex-end;
+  color: #ff6161;
+  text-align: right;
+  font-size: 12px;
+  width: 0;
+  overflow: visible;
+}
+.host-details img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50px;
+}
+
+@media (min-width: 1020px) {
+  .host-details {
+    gap: 10px;
+    order: 1;
+  }
+  .host-details p {
+    font-size: 18px;
+  }
+  .host-details img {
+    width: 64px;
+    height: 64px;
+  }
+}

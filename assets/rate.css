@@ -1,11 +1,17 @@
 .stars-container {
   display: flex;
-  justify-content: flex-start;
+  align-items: baseline;
   margin: 24px 0;
   gap: 6px;
 }
 .stars-container .fa-star {
   font-size: 13px;
+}
+.stars-container .colored-star {
+  color: #ff6161;
+}
+.stars-container .no-color-star {
+  color: #e3e3e3;
 }
 
 @media (min-width: 1020px) {
@@ -13,6 +19,7 @@
     justify-content: flex-end;
     margin: 0;
     gap: 12px;
+    order: 1;
   }
   .stars-container .fa-star {
     font-size: 24px;

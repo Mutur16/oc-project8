@@ -1,11 +1,21 @@
+@import '../../scss/variables.scss';
+
 .stars-container {
     display: flex;
-    justify-content: flex-start;
+    align-items: baseline;
     margin: 24px 0;
     gap: 6px;
 
     .fa-star {
         font-size: 13px;
+    }
+
+    .colored-star {
+        color: $main-color;
+    }
+
+    .no-color-star {
+        color: #e3e3e3;
     }
 }
 
@@ -14,6 +24,7 @@
         justify-content: flex-end;
         margin: 0;
         gap: 12px;
+        order: 1;
 
         .fa-star {
             font-size: 24px;

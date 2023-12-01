@@ -3,23 +3,14 @@ import './rate.scss'
 function Rate({ rating }) {
     let allStars = []
     for (let i = 0; i < 5; i++) {
-        if (rating > i) {
-            allStars.push(
-                <i
-                    className="fa-solid fa-star"
-                    style={{ color: '#ff6161' }}
-                    key={i}
-                ></i>
-            )
-        } else {
-            allStars.push(
-                <i
-                    className="fa-solid fa-star"
-                    style={{ color: '#e3e3e3' }}
-                    key={i}
-                ></i>
-            )
-        }
+        let starClass = rating > i ? 'colored-star' : 'no-color-star';
+        let star = (
+            <i
+                className={`fa-solid fa-star ${starClass}`}
+                key={i}
+            ></i>
+        );
+        allStars.push(star);
     }
     return <div className='stars-container'>{allStars}</div>
 }
