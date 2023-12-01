@@ -1,5 +1,4 @@
 import { useParams } from 'react-router-dom'
-import { Link } from 'react-router-dom'
 
 import housingData from '../../housing.json'
 import Slideshow from '../../components/Slideshow/index.jsx'
@@ -7,15 +6,19 @@ import Tag from '../../components/Tag/index.jsx'
 import Rate from '../../components/Rate/index.jsx'
 import Host from '../../components/Host/index.jsx'
 import Collapse from '../../components/Collapse/index.jsx'
+import Error from '../Error'
 
 import './housing.scss'
 
 function Housing() {
     let { id } = useParams()
     let currentData = housingData.find((item) => item.id === id)
+    if (currentData === undefined) {
+        return <Error />
+    }
 
-    const equipments = currentData.equipments.map((equipment) => (
-        <li>{equipment}</li>
+    const equipments = currentData.equipments.map((equipment, index) => (
+        <li key={index}>{equipment}</li>
     ))
 
     return (
