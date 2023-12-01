@@ -1,5 +1,5 @@
-import Banner from '../../components/Banner/index'
-import Collapse from '../../components/Collapse/index'
+import Banner from '../../components/Banner'
+import Collapse from '../../components/Collapse'
 import AboutBannerImg from '../../assets/about-banner.png'
 import './about.scss'
 
@@ -7,7 +7,7 @@ function About() {
     return (
         <main>
             <Banner img={AboutBannerImg} alt="Bannière de la page à propos" />
-            <div className='collapse'>
+            <div className="collapse">
                 <Collapse
                     label={'Fiabilité'}
                     text={

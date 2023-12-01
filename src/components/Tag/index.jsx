@@ -4,12 +4,12 @@ function Tag({ tags }) {
     const results = []
     tags.forEach((tag, index) => {
         results.push(
-            <div key={index} className='tag'>
+            <div key={index} className="tag">
                 <p>{tag}</p>
             </div>
         )
     })
-    return <div className='tag-container'>{results}</div>
+    return <div className="tag-container">{results}</div>
 }
 
 export default Tag

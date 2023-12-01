@@ -1,11 +1,11 @@
 import { useParams } from 'react-router-dom'
 
 import housingData from '../../housing.json'
-import Slideshow from '../../components/Slideshow/index.jsx'
-import Tag from '../../components/Tag/index.jsx'
-import Rate from '../../components/Rate/index.jsx'
-import Host from '../../components/Host/index.jsx'
-import Collapse from '../../components/Collapse/index.jsx'
+import Slideshow from '../../components/Slideshow'
+import Tag from '../../components/Tag'
+import Rate from '../../components/Rate'
+import Host from '../../components/Host'
+import Collapse from '../../components/Collapse'
 import Error from '../Error'
 
 import './housing.scss'
